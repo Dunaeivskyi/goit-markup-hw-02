@@ -1,6 +1,7 @@
 body {
     color:#434455;
     background-color: #E5E5E5;
+    font-family: Raleway, sans-serif;
     font-family: Roboto, sans-serif;
 }
 
@@ -9,7 +10,11 @@ ul {
 }
 
 .site-nav a {
-    color:#2E2F42
+    color:#2E2F42; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.5;  
 }
 
 .site-nav .link:hover,
@@ -21,6 +26,15 @@ font-weight: 500;
     /* identical to box height, or 150% */
     letter-spacing: 1.5;
 }
+
+.contact-link:hover,:focus{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        letter-spacing: 1.5;
+}
+
 
 .menu-item h3 {
 font-weight: 500;
