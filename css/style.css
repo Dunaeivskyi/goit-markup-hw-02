@@ -6,51 +6,103 @@ body {
 }
 
 ul {
-    list-style:none;
+    list-style: none;
 }
 
-.site-nav a {
-    color:#2E2F42; 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1.5;  
+span {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height, or 117% */
+        letter-spacing: 1.16;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus{
-color: #404BBF;
-font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-    letter-spacing: 1.5;
-}
-
-.contact-link:hover,:focus{
+.nav-item a:hover,
+.nav-item a:focus{
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         /* identical to box height, or 150% */
         letter-spacing: 1.5;
+        color: #2E2F42;
 }
 
-
-.menu-item h3 {
-font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height, or 120% */
-    letter-spacing: 1.2;
-
-    /* NAVY BLUE */
-    color: #2E2F42;
-}
-
-.menu-item p {
+.contact-item a {
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         /* identical to box height, or 150% */
+        letter-spacing: 1.5;
+    
+        /* SLATE */
+        color: #434455;
+}
+
+h1 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        /* or 107% */
+        text-align: center;
+        letter-spacing: 1.07;
+    
+        /* WHITE */
+        color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        /* identical to box height, or 111% */
+        text-align: center;
+        letter-spacing: 1.11;
+        text-transform: capitalize;
+    
+        /* NAVY BLUE */
+        color: #2E2F42;
+}
+
+h3 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        letter-spacing: 1.2;
+    
+        /* NAVY BLUE */
+        color: #2E2F42;
+}
+
+button {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 1.5;
+    
+        /* WHITE */
+        color: #FFFFFF;
+}
+
+.menu-item p {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
         letter-spacing: 1.5;
     
         /* SLATE */
