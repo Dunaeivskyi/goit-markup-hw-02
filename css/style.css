@@ -1,23 +1,46 @@
-body {
-    color:#434455;
-    background-color: #E5E5E5;
-    font-family: Raleway, sans-serif;
-    font-family: Roboto, sans-serif;
+body { 
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #ffff;
+ 
 }
 
-ul {
-    list-style: none;
+/* CSS переменные для текста */
+:root {
+    --text-color: #333;
+    --heading-color: #000;
+    --link-color: #06c;
 }
+
+/* CSS переменные для фона */
+:root {
+    --background-color: #fff;
+    --accent-color: #f00;
+}
+
+/* CSS переменные для выделения */
+:root {
+    --highlight-color: #ff0;
+    --selection-color: #00f;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style:none;
+}
+
+/* Прибрав нижні підчіркавання і крапки */
+
 
 .logo {
-    width: 44px;
-        height: 21px;
-    
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 1.16;
         /* identical to box height, or 117% */
         display: flex;
         align-items: center;
@@ -32,48 +55,43 @@ ul {
         flex: none;
         order: 0;
         flex-grow: 0;
-        text-decoration: none
 }
 
-span {
-        width: 71px;
-            height: 21px;
-        
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 21px;
-            /* identical to box height, or 117% */
-            display: flex;
-            align-items: center;
-            letter-spacing: 1.16;
-            text-transform: uppercase;
-        
-            /* NAVY BLUE */
-            color: #2E2F42;
-        
-        
-            /* Inside auto layout */
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-}
-
-.nav-item a:hover,
-.nav-item a:focus{
-    width: 48px;
-        height: 24px;
+.header-studio {
+    /* Studio */
     
+    
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        /* identical to box height, or 117% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        /* NAVY BLUE */
+        color: #2E2F42;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+.header-link {
+   
         /* Body Medium */
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         /* identical to box height, or 150% */
-        letter-spacing: 1.5;
-    
+        letter-spacing: 0.02em;
         /* NAVY BLUE */
         color: #2E2F42;
     
@@ -84,133 +102,116 @@ span {
         flex-grow: 0;
 }
 
-.contact-item a {
-        position: absolute;
-            width: 153px;
-            height: 24px;
-            left: 940px;
-            top: 24px;
-        
-            /* Body */
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            /* identical to box height, or 150% */
-            letter-spacing: 1.15;
-        
-            /* SLATE */
-            color: #434455;
+.header-link:hover,
+.header-link:focus {
+    color: #4D5AE5;;
 }
 
-h1 {
-    position: absolute;
-        width: 496px;
-        height: 120px;
-        left: 472px;
-        top: 260px;
-    
-        /* Header 1 */
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 60px;
-        /* or 107% */
-        text-align: center;
-        letter-spacing: 1.07;
-    
-        /* WHITE */
-        color: #FFFFFF;
-}
 
-h2 {
-    position: absolute;
-        width: 323px;
-        height: 40px;
-        left: 559px;
-        top: 1016px;
-    
-        /* Header 2 */
+.header-contact-link {
+        /* Body */
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 40px;
-        /* identical to box height, or 111% */
-        text-align: center;
-        letter-spacing: 1.11;
-        text-transform: capitalize;
-    
-        /* NAVY BLUE */
-        color: #2E2F42;
-}
-
-h3 {
-        /* Header 3 */
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        /* identical to box height, or 120% */
-        letter-spacing: 1.2;
-    
-        /* NAVY BLUE */
-        color: #2E2F42;
-    
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-}
-
-button {
-    
-    
-        /* Button Text */
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         /* identical to box height, or 150% */
-        display: flex;
-        align-items: center;
-        letter-spacing: 1.5;
+        letter-spacing: 0.02em;
     
-        /* WHITE */
-        color: #FFFFFF;
-    
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        /* identical to box height, or 150% */
-        display: flex;
-        align-items: center;
-        letter-spacing: 1.5;
-    
-        /* WHITE */
-        color: #FFFFFF;
+        /* SLATE */
+        color: #434455;
 }
 
-.menu-item p {
+.footer-text {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         /* or 150% */
-        letter-spacing: 1.5;
+        letter-spacing: 0.02em;
     
-        /* SLATE */
-        color: #434455;
+        /* CLOUD */
+        color: #F4F4FD;
+}
+
+.footer {
+    background: #2E2F42;
+}
+
+.footer-studio {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        /* identical to box height, or 117% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        /* CLOUD */
+        color: #F4F4FD;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* index-main */
+
+.hero-title {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1.07;
+        /* or 107% */
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: #FFFFFF;
+}
+
+h2 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        /* identical to box height, or 111% */
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    
+        color: #2E2F42;
+}
+
+h3 {
+    font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        /* identical to box height, or 120% */
+        letter-spacing: 0.02em;
+    
+        /* NAVY BLUE */
+        color: #2E2F42;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+.hero {
+    background: #2E2F42;
+}
+
+.menu-team {
+    background: #F4F4FD;
 }
