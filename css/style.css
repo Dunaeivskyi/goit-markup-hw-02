@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #ffff;
+    font-style: normal;
  
 }
 
@@ -40,7 +41,7 @@ body {
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
-        line-height: 1.16;
+        line-height: 1.17;
         /* identical to box height, or 117% */
         display: flex;
         align-items: center;
@@ -59,7 +60,8 @@ body {
 
 header {
     text-decoration: none;
-    font-style: normal;}
+    font-style: normal;
+}
 
 .header-studio {
     /* Studio */
@@ -141,6 +143,7 @@ header {
 
 .footer {
     background: #2E2F42;
+    line-height: 1.17;
 }
 
 .footer-studio {
@@ -148,7 +151,7 @@ header {
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
-        line-height: 1.16;
+        line-height: 1.17;
         /* identical to box height, or 117% */
         display: flex;
         align-items: center;
@@ -167,6 +170,12 @@ header {
 
 button {
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
 /* index-main */
