@@ -58,7 +58,7 @@ body {
         flex-grow: 0;
 }
 
-header {
+.header {
     text-decoration: none;
     font-style: normal;
 }
